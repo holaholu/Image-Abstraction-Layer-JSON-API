@@ -1,0 +1,20 @@
+{
+  "name": "imgab",
+  "version": "1.0.0",
+  "description": "image absctraction",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holaholu/Image-Abstraction-Layer-JSON-API.git"
+  },
+  "author": "O. Adisa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holaholu/Image-Abstraction-Layer-JSON-API/issues"
+  },
+  "homepage": "https://github.com/holaholu/Image-Abstraction-Layer-JSON-API#readme"
+}
