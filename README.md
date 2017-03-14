@@ -1,1 +1,1 @@
-This is an Image Abscraction Layer JSON API
+This is an Image Abstraction Layer JSON API
