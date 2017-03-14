@@ -19,7 +19,7 @@ app.get('/api/imagesearch/:id', (req, res) => {
                         url : myurl,
                         headers : {
                             'content-type' : 'multipart/form-data',
-                            "Ocp-Apim-Subscription-Key" : "0b3b471995964f828cac899d52d15ab9",
+                            "Ocp-Apim-Subscription-Key" : process.env.BINGKEY,
                         },
                         
                     },
@@ -58,7 +58,7 @@ app.get('/api/latest/imagesearch', (req, res) => {
                         url : "https://api.cognitive.microsoft.com/bing/v5.0/images/trending",
                         headers : {
                             'content-type' : 'multipart/form-data',
-                            "Ocp-Apim-Subscription-Key" : "0b3b471995964f828cac899d52d15ab9",
+                            "Ocp-Apim-Subscription-Key" : process.env.BINGKEY,
                             
                           
                         },
@@ -103,7 +103,13 @@ app.get('/', (req, res) => {
 
 app.get('*', (req, res) => {
   
-  res.send ("Page not Found");
+  res.send (`{
+    seach for images with : https://imghola-sch.herokuapp.com/api/imagesearch/funny%20cat?offset=10 OR
+                            https://imghola-sch.herokuapp.com/api/imagesearch/funny%20cat?offset=10,
+                            
+    get latest/trending searches with : https://imghola-sch.herokuapp.com/api/latest/imagesearch                        
+    
+  }`);
   
     
 })
